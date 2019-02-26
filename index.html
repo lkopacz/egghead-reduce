@@ -60,7 +60,10 @@
       //   [-2.2936739, 53.4722249]
       // ]
 
-      const coordinates = countries.reduce((arr, item, index) => {});
+      const coordinates = countries.reduce((arr, item, index) => {
+        arr[index] = [item.longitude, item.latitude];
+        return arr;
+      }, []);
     </script>
   </body>
 </html>
